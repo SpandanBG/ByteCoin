@@ -1,0 +1,13 @@
+{
+  "primaryCryCoin" : {
+    "Bitcoin" : "BTC"
+  },
+
+  "secondCryCoin" : {
+    "Bitcoin Cash" : "BCH",
+    "Ethereum" : "ETH",
+    "Ripple" : "XRP",
+    "Litecoin" : "LTC",
+    "Omisego" : "OMG"
+  }
+}
