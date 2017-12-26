@@ -1,0 +1,5 @@
+# General folder
+.idea/
+build/
+dist/
+bin/__pycache__/
