@@ -1,4 +1,4 @@
-from tkinter import Tk, LEFT, RIGHT, SUNKEN, BOTTOM, BOTH, X, StringVar, BooleanVar
+from tkinter import Tk, LEFT, RIGHT, SUNKEN, BOTTOM, BOTH, END, X, StringVar, BooleanVar
 from tkinter.ttk import Button, Label, Entry, Checkbutton, Frame, Style
 
 """
@@ -103,7 +103,7 @@ class UserInterface:
         return
 
     def _main_app(self):
-        self._app_main = Frame(self.app, relief=SUNKEN)#, style="App.TFrame")
+        self._app_main = Frame(self.app, relief=SUNKEN)
         self._app_main.pack(fill=BOTH, expand=True)
         return
 

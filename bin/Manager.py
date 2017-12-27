@@ -135,7 +135,7 @@ class Manager(threading.Thread):
 
                 cwatch.join()
                 cdelta.join()
-                if self._IS_STOP_EXECUTED is False:
+                if self._IS_STOP_EXECUTED is False and self._is_refreshing is True:
                     self._calling_class.error("CONNECTED")
                     self._is_refreshing = False
                     self._clock_id = self._clock_id + 1
