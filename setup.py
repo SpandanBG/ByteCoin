@@ -24,7 +24,7 @@ executable = [
 
 setup(
     name='ByteCoin',
-    version='0.0.1',
+    version='0.0.2',
     description='Bitcoin Purchase Price Calc',
 	options={'build_exe': build_exe_option},
     executables=executable
