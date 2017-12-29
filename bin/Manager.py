@@ -28,7 +28,7 @@ class Manager(threading.Thread):
 
         self._ccoins = CC.CryCoin()
         self._zphase = ZP.ZPhase()
-        self._command_stack = HP.Stack()
+        self._command_stack = HP.ProcessStack()
 
         self._is_refreshing = False
         return

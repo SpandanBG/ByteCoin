@@ -17,10 +17,8 @@ def loadJson(path=None, text=None):
             return json.loads(data)
         elif text is not None:
             return json.loads(text)
-        else:
-            return None
-    except Exception:
-        return None
+    except Exception: pass
+    return {}
 
 # Countdown thread
 class Clock(threading.Thread):
@@ -38,7 +36,6 @@ class Clock(threading.Thread):
             self._ticks = self._ticks - 1
             if self._ticks == 0:
                 self._callingClass.timed(self._clock_id)
-        self._exit = True
         return
 
     def countDown(self, ticks):
@@ -47,12 +44,10 @@ class Clock(threading.Thread):
 
     def stop(self):
         self._exit = True
-
-    def clockStopped(self):
-        return not self.isAlive()
+        return
 
 # Stack Class
-class Stack:
+class ProcessStack:
     def __init__(self):
         self._items = []
 
@@ -68,6 +63,3 @@ class Stack:
 
     def size(self):
         return len(self._items)
-
-    def all_items(self):
-        return self._items
