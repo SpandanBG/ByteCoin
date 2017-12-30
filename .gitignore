@@ -3,3 +3,4 @@
 build/
 dist/
 bin/__pycache__/
+*.pyc
