@@ -22,7 +22,9 @@ class UserInterface:
         return
 
     def start_ui(self):
-        self.root.iconbitmap(default=self._icon)
+        try:
+            self.root.iconbitmap(default=self._icon)
+        except Exception: pass
         self._dimen_setup()
         self._style_setup()
 

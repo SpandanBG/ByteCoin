@@ -31,4 +31,4 @@ class ZPhase:
             return False
 
     def processRate(self):
-        return float(self._z)*float(self._ratio)
+        return float(self._ratio)/float(self._z)

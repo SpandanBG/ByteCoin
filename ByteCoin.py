@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 from bin import UserInterface as UI, Manager as MG
 
 def main():
@@ -15,4 +15,4 @@ def main():
         print(e)
 
 if __name__ == "__main__":
-	main()
+    main()
