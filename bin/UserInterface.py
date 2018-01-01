@@ -66,7 +66,7 @@ class UserInterface:
         return
 
     def update_processed_rate(self, value):
-        self._process_var.set("%.2f" % (value))
+        self._process_var.set("%.5f" % (value))
         return
 
     def coin_select(self, id):
@@ -235,7 +235,7 @@ class UserInterface:
         process_box = Frame(self._app_main)
         process_box.pack(fill=X, padx=12, pady=12)
 
-        process_tag = Label(process_box, text="PROCESSED VALUE", anchor="center")
+        process_tag = Label(process_box, text="MULTIPLIER", anchor="center")
         process_tag.pack(fill=X, side=BOTTOM)
 
         self._process_var = StringVar()
